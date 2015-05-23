@@ -1,5 +1,5 @@
-	function isdefined(o){return typeof(o)!=='undefined';}
+function isdefined(o){return o!=='' && typeof(o)!=='undefined';}
+isdefined.array=function(oa){var o=oa;return isdefined(o) && Array.isArray(o);};
 
-	isdefined.array=function(oa){var o=oa;return isdefined(o) && Array.isArray(o);}
 
 console.log(isdefined.array([]));
